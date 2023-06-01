@@ -19,6 +19,8 @@
 .post-suggest, .all-posts{
     display: flex;
     flex-direction: column;
+    margin-bottom: 4.375rem;
+    gap: 2.5rem;
 }
 
 .post-suggest__li{
@@ -46,9 +48,9 @@
 }
 
 .user-post > input{
-    padding: 0.625rem;
-    border-radius: 0.125rem;
-    border: 0.125rem solid var(--grey-color-4)
+padding: 0.625rem;
+border-radius: 0.125rem;
+border: 0.125rem solid var(--grey-color-4)
 }
 
 .user-post__input{
@@ -81,8 +83,8 @@ aside > h2{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    min-width: 13.5rem;
-    height: 7rem;
+    min-width: 14.5rem;
+    height: 8rem;
 }
 
 .suggest__li > button{
@@ -90,3 +92,56 @@ aside > h2{
     padding: 5px 10px;
 }
 
+.post{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 4.375rem;
+}
+
+.open-post{
+    display: flex;
+    flex-direction: row;
+    gap: 2.25rem
+}
+
+.like{
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px
+}
+
+.like > img{
+    width: 20px;
+    height: 35px;
+}
+
+.like > small{
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-2);
+}
+
+.modal__controller{
+    width: 80%;
+    border: 1px solid var(--brand-dark);
+    border-radius: 0.3125rem;
+    position:relative;
+}
+
+.modal__li{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem
+}
+
+.modal__close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 1.25rem;
+    margin-right: 0.625rem;
+    background-color: transparent;
+    color: var(--grey-color-3);
+    font-weight: var(--font-weight-2);
+}

@@ -6,16 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- CSS -->
+
   <link rel="stylesheet" href="./src/styles/reset.css" />
   <link rel="stylesheet" href="./src/styles/global.css" />
   <link rel="stylesheet" href="./src/styles/index.css" />
 
-  <!-- FONTE -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
+
+  <script type="module" src="./src/scripts/index.js" defer></script>
 
   <title>Criando rede social</title>
 </head>
@@ -42,7 +43,7 @@
           </div>
 
           <div class="user-post">
-            <input  type="text" placeholder="digitar título do post">
+            <input type="text" placeholder="digitar título do post">
             <input class="user-post__input" type="text" placeholder="Digitar descrição do post"></input>
             <button class="user-post__button">Postar</button>
           </div>
@@ -50,10 +51,11 @@
       </ul>
 
       <aside>
-        <h2>Seguestões para você seguir</h2>       
+        <h2>Seguestões para você seguir</h2>
+
         <ul class="suggest">
-          
           <li class="suggest__li">
+
             <div class="suggest__users">
               <img src="./src/assets/img/user2.svg" alt="carlos">
               <div class="user-profile">
@@ -62,45 +64,64 @@
               </div>
             </div>
             <button class="follow-button">seguir</button>
-          </li>
 
+          </li>
         </ul>
+
       </aside>
     </section>
 
     <section class="all-posts">
+      <h2>Posts</h2>
+
       <ul class="all-posts__ul">
         <li class="post">
-          <h2>Posts</h2>
 
-            <div class="suggest__users">
-              <img src="./src/assets/img/user1.svg" alt="samuel?">
-              <div class="user-profile">
-                <h3>Samuel Leão</h3>
-                <small>Front end Enginner</small>
-              </div>
+          <div class="suggest__users">
+            <img src="./src/assets/img/user1.svg" alt="samuel?">
+            <div class="user-profile">
+              <h3>Samuel Leão</h3>
+              <small>Front end Enginner</small>
             </div>
+          </div>
 
-            <p class="title-post">Como criar um interface simples e agradável utilizando boas práticas de design</p>
+          <p class="title-post">Como criar um interface simples e agradável utilizando boas práticas de design</p>
+          <p class="post-description">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um
+            design pronto feito por um profissional de UI design.</p>
 
-            <p class="post-description">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
-
-            <div class="open-post">
-              <button class="open-post__button">Abrir Post</button>
-
-              <div class="like">
-                <img src="./src/assets/img/btn-like-grey.svg" alt="like">
-                <small>24</small>
-              </div>
+          <div class="open-post">
+            <button class="open-post__button">Abrir Post</button>
+            <div class="like">
+              <img src="./src/assets/img/btn-like-grey.svg" alt="like">
+              <small>24</small>
             </div>
+          </div>
+
         </li>
-
       </ul>
     </section>
 
   </main>
 
-  <footer></footer>
+  <dialog class="modal__controller">
+    <ul class="modal__content">
+      <li class="modal__li">
+        <div class="suggest__users">
+          <img src="./src/assets/img/user1.svg" alt="samuel?">
+          <div class="user-profile">
+            <h3>Samuel Leão</h3>
+            <small>Front end Enginner</small>
+          </div>
+        </div>
+
+        <p class="title-post">Como criar um interface simples e agradável utilizando boas práticas de design</p>
+        <p class="post-description">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um
+            design pronto feito por um profissional de UI design.</p>
+
+      </li>
+      <button class="modal__close">X</button>
+    </ul>
+  </dialog>
 
 </body>
 
