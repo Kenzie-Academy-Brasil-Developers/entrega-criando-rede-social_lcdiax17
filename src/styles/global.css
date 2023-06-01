@@ -1,10 +1,84 @@
 
 :root{
-    --brand-light: #4263EB
-    --brand-dark: #364FC7
+    --brand-light: #4263EB;
+    --brand-dark: #364FC7;
+
+    --grey-color-0: #0A0C0D;
+    --grey-color-1: #212529;
+    --grey-color-2: #495057;
+    --grey-color-3: #868E96;
+    --grey-color-4: #DEE2E6;
+    --grey-color-5: #F8F9FA;
+    --white-fixed: #FFFFFF;
+
+    --font-weight-1: 700;
+    --font-weight-2: 600;
+    --font-weight-3: 400;
+
+    --font-size-1: 1.75rem;
+    --font-size-2: 1.25rem;
+    --font-size-3: 1rem;
+    --font-size-4: 0.875rem;
+
+    --line-height-1: 2.5rem;
+    --line-height-2: 1.75rem
 }
 
 img {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
+}
+
+small{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-3);
+    color: var(--grey-color-2);
+}
+
+h2{
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-1);
+}
+
+h3{
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-2);
+}
+
+.title-post{
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-1);
+}
+
+.post-description{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-3);
+    line-height: var(--line-height-2) ;
+    color: var(--grey-color-2);
+}
+
+.follow-button{
+    padding: 0.3125rem;
+    border-radius: 0.125rem;
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-2);
+    background-color: transparent;
+    border: 1px solid var(--grey-color-0)
+}
+
+.following-button{
+    padding: 0.3125rem;
+    background-color: var(--brand-light);
+    border: 1px solid var(--brand-light);
+    color:var(--white-fixed)
+}
+
+.open-post__button{
+    width: 5.75rem;
+    height: 2.375rem;
+    padding: 0.3125rem;
+    border-radius: 0.125rem;
+    background-color: var(--grey-color-0);
+    color: var(--white-fixed)
 }
