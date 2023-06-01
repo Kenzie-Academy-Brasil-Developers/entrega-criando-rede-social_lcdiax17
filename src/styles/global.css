@@ -1,0 +1,10 @@
+
+:root{
+    --brand-light: #4263EB
+    --brand-dark: #364FC7
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
