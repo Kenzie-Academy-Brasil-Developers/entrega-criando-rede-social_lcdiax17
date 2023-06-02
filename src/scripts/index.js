@@ -7,7 +7,6 @@ const handleModal = () =>{
     const modalController = document.querySelector('.modal__controller')
     const modalUl = document.querySelector('.modal__content')
     const buttons = document.querySelectorAll('.open-post__button')
-    const modalClose = document.querySelector('.modal__close')
 
     buttons.forEach(element =>{
         const button = element
