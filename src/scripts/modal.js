@@ -10,6 +10,7 @@ export const createModal = (postId) =>{
     posts.forEach(element =>{
         if(postId === element.id){
             userPost = element
+           
         }
     })
 
