@@ -8,8 +8,6 @@ export const createModal = (postId) =>{
     modalUl.innerHTML = " "
 
     posts.forEach(element =>{
-        parseInt(postId)
-
         if(postId === element.id){
             userPost = element
         }
@@ -25,6 +23,25 @@ export const createModal = (postId) =>{
     let descriptionPost = document.createElement('p')
     let closeModal = document.createElement('button')
 
+    modalLi.classList.add('modal__li')
+    userDiv.classList.add('suggest__users')
+    profileUserDiv.classList.add('user-profile')
+    titlePost.classList.add('title-post')
+    descriptionPost.classList.add('post-description')
+    closeModal.classList.add('modal__close')
 
+    userImg.src = userPost.img
+    userImg.alt = userPost.user
+    userName.innerText = userPost.user
+    userStack.innerText = userPost.stack
+    titlePost.innerText = userPost.title
+    descriptionPost.innerText = userPost.text
+    closeModal.innerText = 'X'
+
+    userDiv.append(userImg, profileUserDiv)
+    profileUserDiv.append(userName, userStack)
+    modalLi.append(userDiv, titlePost, descriptionPost, closeModal)
+
+    return modalLi
 }
 
