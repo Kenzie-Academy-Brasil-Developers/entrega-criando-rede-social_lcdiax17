@@ -32,6 +32,23 @@ const handleModal = () =>{
     }
 }
 
-render(suggestUsers, posts)
+const follow = () =>{
+    const followButtons = document.querySelectorAll(".follow-button")
 
+    followButtons.forEach(element =>{
+        const button = element
+
+        button.addEventListener('click', ()=>{
+            if(button.innerText === 'seguir'){
+                button.classList.toggle('following-button', button.innerText = 'seguindo')
+            }else{
+                button.classList.remove('following-button')
+                button.classList.toggle('follow-button', button.innerText = 'seguir')
+            }
+        })
+    })
+}
+
+render(suggestUsers, posts)
 handleModal()
+follow()
