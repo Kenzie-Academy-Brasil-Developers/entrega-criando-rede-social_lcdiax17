@@ -80,7 +80,7 @@ const renderAllPosts = (post) =>{
     userName.innerText = post.user
     userStack.innerText = post.stack
     titlePost.innerText = post.title
-    descriptionPost.innerText = post.text
+    descriptionPost.innerText = `${post.text.substring(0, 150)}...`
     openPostButton.innerText = 'Abrir post'
     openPostButton.dataset.postId = post.id
     likeImgButton.src = "./src/assets/img/btn-like-grey.svg"

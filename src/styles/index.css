@@ -125,6 +125,14 @@ aside > h2{
 
 @media (min-width: 1024px){
 
+    .header__container{
+        padding: 0rem 5rem;
+    }
+
+    main{
+        padding: 10rem 5rem 0rem 5rem;
+    }
+
     aside{
         width: 40%;
     }
@@ -164,4 +172,5 @@ aside > h2{
     .post{
         width: 55%;
     }
+
 }

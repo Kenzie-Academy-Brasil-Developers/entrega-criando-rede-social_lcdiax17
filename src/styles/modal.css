@@ -35,3 +35,27 @@
     margin-top: 1.25rem;
     margin-right: 0.625rem;
 }
+
+@media (min-width: 1024px){
+    .modal__controller{
+        width: 50%;
+        height: 27rem;
+    }
+
+    .modal__li{
+        gap: 1.5rem
+    }
+    .modal__li > .suggest__users > .user-profile > h3{
+        font-size: var(--font-size-2);
+    }
+    
+    .modal__li > .title-post{
+        font-size: var(--font-size-1);
+        line-height: var(--line-height-1);
+    }
+
+    .modal__li > .post-description{
+        font-size: var(--font-size-3);
+        line-height: var(--line-height-1);
+    }
+}
