@@ -49,6 +49,19 @@ const follow = () =>{
     })
 }
 
+const allLikes = () =>{
+    const likeButtons = document.querySelectorAll('.like-button')
+
+    likeButtons.forEach(element =>{
+        const button = element
+        
+        button.addEventListener('click', () =>{
+            button.src = './src/assets/img/btn-like-red.svg'    
+        })
+    })
+}
+
 render(suggestUsers, posts)
 handleModal()
 follow()
+allLikes()

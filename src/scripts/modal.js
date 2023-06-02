@@ -22,7 +22,7 @@ export const createModal = (postId) =>{
     let userStack = document.createElement('small')
     let titlePost = document.createElement('p')
     let descriptionPost = document.createElement('p')
-    let closeModal = document.createElement('button')
+    let closeModal = document.createElement('img')
 
     modalLi.classList.add('modal__li')
     userDiv.classList.add('suggest__users')
@@ -37,7 +37,7 @@ export const createModal = (postId) =>{
     userStack.innerText = userPost.stack
     titlePost.innerText = userPost.title
     descriptionPost.innerText = userPost.text
-    closeModal.innerText = 'X'
+    closeModal.src = "./src/assets/img/button-close.svg"
 
     userDiv.append(userImg, profileUserDiv)
     profileUserDiv.append(userName, userStack)

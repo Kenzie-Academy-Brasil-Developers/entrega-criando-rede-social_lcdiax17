@@ -49,6 +49,14 @@ h3{
     font-weight: var(--font-weight-2);
 }
 
+button:hover{
+    transition: 0.3s;
+    background-color: var(--brand-light);
+    border: 0.0625rem solid var(--brand-light);
+    color:var(--white-fixed)
+}
+
+
 .title-post{
     font-size: var(--font-size-1);
     font-weight: var(--font-weight-1);

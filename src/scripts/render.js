@@ -73,6 +73,7 @@ const renderAllPosts = (post) =>{
     openPostDiv.classList.add('open-post')
     openPostButton.classList.add('open-post__button')
     likeDiv.classList.add('like')
+    likeImgButton.classList.add('like-button')
 
     userImg.src = post.img
     userImg.alt = post.user

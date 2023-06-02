@@ -30,9 +30,8 @@
     position: absolute;
     top: 0;
     right: 0;
+    width: 1.875rem;
+    height: 1.875rem;
     margin-top: 1.25rem;
     margin-right: 0.625rem;
-    background-color: transparent;
-    color: var(--grey-color-3);
-    font-weight: var(--font-weight-2);
 }
