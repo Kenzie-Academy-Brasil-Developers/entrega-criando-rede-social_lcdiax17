@@ -3,7 +3,7 @@ const suggestUsersUl = document.querySelector('.suggest')
 const postsUsersUl = document.querySelector('.all-posts__ul')
 
     suggestUsersUl.innerHTML = ""
-    // postsUsersUl.innerHTML = ""
+    postsUsersUl.innerHTML = ""
 
     user.forEach(element =>{
         let users = element
@@ -13,10 +13,10 @@ const postsUsersUl = document.querySelector('.all-posts__ul')
     })
 
     post.forEach(element =>{
-        console.log(element)
-
         let allPosts = element
         let post = renderAllPosts(allPosts)
+
+        postsUsersUl.appendChild(post)
     })
 }
 
@@ -74,5 +74,24 @@ const renderAllPosts = (post) =>{
     openPostButton.classList.add('open-post__button')
     likeDiv.classList.add('like')
 
+    userImg.src = post.img
+    userImg.alt = post.user
+    userName.innerText = post.user
+    userStack.innerText = post.stack
+    titlePost.innerText = post.title
+    descriptionPost.innerText = post.text
+    openPostButton.innerText = 'Abrir post'
+    openPostButton.dataset.postId = post.id
+    likeImgButton.src = "./src/assets/img/btn-like-grey.svg"
+    likeImgButton.alt = 'like'
+    likeNumber.innerText = post.likes
 
+    suggestDiv.append(userImg, userProfileDiv)
+    userProfileDiv.append(userName, userStack)
+    openPostDiv.append(openPostButton, likeDiv)
+    likeDiv.append(likeImgButton, likeNumber)
+
+    postLi.append(suggestDiv, titlePost, descriptionPost, openPostDiv)
+
+    return postLi
 }
