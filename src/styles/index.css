@@ -95,6 +95,7 @@ aside > h2{
 .post{
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 2.5rem;
     margin-bottom: 4.375rem;
 }
@@ -109,12 +110,12 @@ aside > h2{
      display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px
+    gap: 0.3125rem
 }
 
 .like > img{
-    width: 20px;
-    height: 35px;
+    width: 1.25rem;
+    height: 2.1875rem;
 }
 
 .like > small{
@@ -122,3 +123,45 @@ aside > h2{
     font-weight: var(--font-weight-2);
 }
 
+@media (min-width: 1024px){
+
+    aside{
+        width: 40%;
+    }
+
+    aside > h2{
+        margin: 0rem 0rem 3.125rem 0rem;
+    }
+    .post-suggest{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .post-suggest__new-post{
+        width: 60%;
+    }
+
+    .user-post__input{
+        height: 11.25rem;
+    }
+
+    .suggest{
+        overflow: inherit;
+        flex-direction: column;
+        height: 19.75rem;
+    }
+
+    .suggest__li{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .suggest__li > button{
+        align-self: inherit;
+    }
+
+    .post{
+        width: 55%;
+    }
+}
